@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+        {% for equipement in equipement %}
+        <div class ="col-sm-3 col-md-3">
+            <div class="card">
+                <img class="card-img-top" id = "{{equipement.id_equip}}" src="{{equipement.photo}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{equipement.id_equip}}</h5>
+                    <p class="card-text">Disponibilité: {{equipement.disponibilite}} </p>
+                    <a href="{% url 'equipement_detail' id_equip=equipement.id_equip %}" class="btn btn-primary">Plus details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+{% endblock %}

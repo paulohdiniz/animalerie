@@ -10,12 +10,22 @@
     <body>
         <div class="page-header">
             <h1><a href="/">Farm</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/animals">Animals</a></li>
+                    <li><a href="/equipements">Equipements</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="content-fluid">
-            <div class="card-group">
+        <div class="container-fluid text-center bg-grey">
+            <div class="row text-center">
                 {% block content %}
                 {% endblock %}
             </div>
         </div>
+    <footer>
+        <p>Copyright - Paulo Henrique DINIZ FERNANDES. </p>
+    </footer>
     </body>
 </html>

@@ -46,33 +46,62 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 
-#Tac {
+#Tac, #Tic, #Patrick, #Totoro, #Pocahontas, #roue, #mangeoire, #litière, #nid  {
     border: 1px solid #ddd;
     border-radius: 1px;
     padding: 1px;
     width: 250px;
 }
-#Tic {
-    border: 1px solid #ddd;
-    border-radius: 1px;
-    padding: 1px;
-    width: 250px;
+#parc {
+    width: 550px;
+    height: auto;
 }
-#Patrick {
-    border: 1px solid #ddd;
-    border-radius: 1px;
-    padding: 1px;
-    width: 250px;
+.invisible{
+    background: transparent;
+    border: none !important;
+    font-size:0;
 }
-#Totoro {
-    border: 1px solid #ddd;
-    border-radius: 1px;
-    padding: 1px;
-    width: 250px;
+
+.page-header{
+    text-align: center;
+    border: 2px solid #ccc;
 }
-#Pocahontas {
-    border: 1px solid #ddd;
-    border-radius: 1px;
-    padding: 1px;
-    width: 250px;
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
 }
+
+nav ul li {
+    display: inline-block;
+    /* border: 2px solid black; */
+    padding: 10px 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*  footer start*/
+footer {
+    background-color: #f2f2f2;
+    margin-top:auto; 
+
+}
+
+footer p {
+
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.wrapper {
+    flex:1
+}
+/* footer finish */

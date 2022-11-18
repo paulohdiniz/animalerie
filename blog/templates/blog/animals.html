@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+        {% for animal in animal %}
+        <div class ="col-sm-3 col-md-3">
+            <div class="card">
+                <img class="card-img-top" id = "{{animal.id_animal}}" src="{{animal.photo}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{animal.id_animal}}</h5>
+                    <p class="card-text">Race: {{animal.race}} <br> Type: {{animal.type}} <br> État: {{animal.etat}} <br> Lieu: {{animal.lieu}} </p>
+                    <a href="{% url 'animal_detail' id_animal=animal.id_animal %}" class="btn btn-primary">Plus details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+{% endblock %}
