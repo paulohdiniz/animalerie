@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class ="col-6 col-sm-4 col-md-3 p-2">
+    <div class="card h-100" style="width: 10rem;">
+        <img class="card-img-top" id = "{{animal.id_animal}}" src="{{animal.photo}}" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">{{animal.id_animal}}</h5>
+        <p class="card-text">Race: {{animal.race}} <br> Type: {{animal.type}} <br> État: {{animal.etat}} <br> Lieu: {{animal.lieu}} </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
