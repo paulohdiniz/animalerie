@@ -1,5 +1,5 @@
 {% extends 'blog/base.html' %}
-
+{% load static %}
 {% block content %}
 <div>
     <div class="card h-100">
@@ -7,7 +7,13 @@
         <div class="card-body">
         <h4 class="card-title">{{animal.id_animal}}</h4>
         <p class="card-text"> <strong>Race:</strong> {{animal.race}} <br> <strong>Type:</strong> {{animal.type}} <br> <strong>État:</strong> {{animal.etat}} <br> <strong>Lieu:</strong> {{animal.lieu}} </p>
-        <a href="#" class="invisible">Go somewhere</a>
+        
+        <form method="POST" class="post-form">{% csrf_token %}
+            <b> Changer : </b> {{ form.as_ul }}
+            <button type="submit" class="btn btn-outline-light">OK</button>
+            <a href="{% url 'farm' %}">Back</a>
+        </form>
+
         </div>
     </div>
 </div>
