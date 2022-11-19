@@ -6,8 +6,8 @@
             <div class="card">
                 <img class="card-img-top" id = "{{animal.id_animal}}" src="{{animal.photo}}" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">{{animal.id_animal}}</h5>
-                    <p class="card-text">Race: {{animal.race}} <br> Type: {{animal.type}} <br> État: {{animal.etat}} <br> Lieu: {{animal.lieu}} </p>
+                    <h4 class="card-title">{{animal.id_animal}}</h4>
+                    <p class="card-text"> <strong>Race:</strong> {{animal.race}} <br> <strong>Type:</strong> {{animal.type}} <br> <strong>État:</strong> {{animal.etat}} <br> <strong>Lieu:</strong> {{animal.lieu}} </p>
                     <a href="{% url 'animal_detail' id_animal=animal.id_animal %}" class="btn btn-primary">Plus details</a>
                 </div>
             </div>
